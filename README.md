@@ -1,3 +1,12 @@
+# Nvidia Buffer Patch
+I've added the patch file buffer.patch inside the /src/dxvk folder which comments out "devExtensions.nvxBinaryImport.setMode(DxvkExtMode::Optional)" in the dxvk_adapter.cpp file when the command "$ patch dxvk_adapter.cpp buffer.patch" is executed.
+
+Doing so enables some games, including DayZ in my case, to launch more reliably as without there appears to be some sort of memory buffer overload.  It is unclear if this has negative concequences in other games, though I've yet to experience any.
+
+I am working to keep this fork synced as closely to upstream as possible, while maintaining this patch to easily generate updated DLLs should new versions of Proton come from Valve or GE for my own personal use, though anyone may feel free to use.  
+
+Credit to @awth13 who posted the patch code to https://github.com/ValveSoftware/Proton/issues/3899 that allows this fix to work. 
+
 # DXVK
 
 A Vulkan-based translation layer for Direct3D 9/10/11 which allows running 3D applications on Linux using Wine.
