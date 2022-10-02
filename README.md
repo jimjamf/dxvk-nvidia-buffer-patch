@@ -1,5 +1,5 @@
 # Nvidia Buffer Patch
-I've added the patch file buffer.patch inside the /src/dxvk folder which comments out "devExtensions.nvxBinaryImport.setMode(DxvkExtMode::Optional)" in the dxvk_adapter.cpp file when the command "$ patch dxvk_adapter.cpp buffer.patch" is executed.
+I've added the patch file buffer.patch inside the /src/dxvk folder which comments out "devExtensions.nvxBinaryImport.setMode(DxvkExtMode::Optional)" in the dxvk_adapter.cpp file when the command "$ patch dxvk_adapter.cpp buffer.patch" is executed as a fix for the issue described here: https://github.com/doitsujin/dxvk/issues/2504
 
 Doing so enables some games, including DayZ in my case, to launch more reliably as without there appears to be some sort of memory buffer overload.  It is unclear if this has negative concequences in other games, though I've yet to experience any.
 
