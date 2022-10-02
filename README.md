@@ -3,7 +3,7 @@ I've added the patch file buffer.patch inside the /src/dxvk folder which comment
 
 Doing so enables some games, including DayZ in my case, to launch more reliably as without there appears to be some sort of memory buffer overload.  It is unclear if this has negative concequences in other games, though I've yet to experience any.
 
-I am working to keep this fork synced to upstream while maintaining this repo to easily generate new patched DLLs should new versions of Proton come from Valve or GE until/if this issue is resolved (it is beleived to be an Nvidia driver issue....yay...).  I do this for my own personal use and any use of this code is at your own risk.  That said, this is a clean fork of the master DXVK branch with the only addtion being the patch file (the patch is NOT applied to the code, you do that prior to building the DLLs as described below).
+I am working to keep this fork synced to upstream while maintaining this repo to easily generate new patched DLLs should new versions of Proton come from Valve or GE until/if this issue is resolved (it is believed to be an Nvidia driver issue....yay).  I do this for my own personal use and any use of this code is at your own risk.  That said, this is a clean fork of the master DXVK branch with the only addtion being the patch file (the patch is NOT applied to the code, you do that prior to building the DLLs as described below).
 
 Credit to @awth13 who posted the patch code to https://github.com/ValveSoftware/Proton/issues/3899 that allows this fix to work. 
 
